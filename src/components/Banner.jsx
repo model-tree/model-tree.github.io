@@ -58,20 +58,30 @@ function Banner() {
             >
               What we do
             </Link>
+            <Link 
+              to="/portfolio" 
+              className={`text-lg transition-colors ${
+                isActive('/portfolio') 
+                  ? 'font-bold text-white' 
+                  : 'text-gray-400 hover:text-white'
+              }`}
+            >
+              Portfolio
+            </Link>
           </nav>
 
-          {/* Mobile Hamburger Button */}
+          {/* Mobile Hamburger Button - Right side */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden text-white focus:outline-none"
+            className="md:hidden text-white focus:outline-none p-2"
             aria-label="Toggle menu"
           >
             {isMenuOpen ? (
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             ) : (
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               </svg>
             )}
@@ -114,6 +124,17 @@ function Banner() {
                 }`}
               >
                 What we do
+              </Link>
+              <Link 
+                to="/portfolio" 
+                onClick={closeMenu}
+                className={`text-lg transition-colors ${
+                  isActive('/portfolio') 
+                    ? 'font-bold text-white' 
+                    : 'text-gray-400 hover:text-white'
+                }`}
+              >
+                Portfolio
               </Link>
             </div>
           </nav>
