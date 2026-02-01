@@ -2,20 +2,20 @@ import TeamMember from '../components/TeamMember'
 
 function WhoWeAre() {
   return (
-    <div className="py-12">
+    <div className="py-12 slide-in-right">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-4xl font-bold text-cyan-400 mb-12 text-center">
+          <h1 className="text-4xl font-bold text-white mb-12 text-center">
             Who We Are
           </h1>
           
           {/* First Section */}
           <div className="flex flex-col md:flex-row items-center gap-8 mb-12">
-            <div className="flex-shrink-0 w-full md:w-1/5">
+            <div className="flex-shrink-0 w-full md:w-1/5 flex justify-center">
               <img 
                 src="/who_we_are_1.webp" 
                 alt="Who we are" 
-                className="w-full max-w-md rounded-lg shadow-lg"
+                className="w-full max-w-[200px] rounded-lg shadow-lg"
               />
             </div>
             <div className="w-full md:w-4/5">
@@ -27,11 +27,11 @@ function WhoWeAre() {
 
           {/* Second Section */}
           <div className="flex flex-col md:flex-row items-center gap-8 mb-12">
-            <div className="flex-shrink-0 w-full md:w-1/5">
+            <div className="flex-shrink-0 w-full md:w-1/5 flex justify-center">
               <img 
                 src="/who_we_are_2.webp" 
                 alt="Who we are" 
-                className="w-full max-w-md rounded-lg shadow-lg"
+                className="w-full max-w-[200px] rounded-lg shadow-lg"
               />
             </div>
             <div className="w-full md:w-4/5">
@@ -43,11 +43,11 @@ function WhoWeAre() {
 
           {/* Third Section */}
           <div className="flex flex-col md:flex-row items-center gap-8 mb-16">
-            <div className="flex-shrink-0 w-full md:w-1/5">
+            <div className="flex-shrink-0 w-full md:w-1/5 flex justify-center">
               <img 
                 src="/who_we_are_3.webp" 
                 alt="Who we are" 
-                className="w-full max-w-md rounded-lg shadow-lg"
+                className="w-full max-w-[200px] rounded-lg shadow-lg"
               />
             </div>
             <div className="w-full md:w-4/5">
@@ -61,7 +61,7 @@ function WhoWeAre() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-16">
             {/* Models Section */}
             <div className="bg-black rounded-lg p-6 border border-gray-700">
-              <h2 className="text-2xl font-bold text-cyan-400 mb-4">Models</h2>
+              <h2 className="text-2xl font-bold text-white mb-4">Models</h2>
               <div className="space-y-4">
                 <div>
                   <h3 className="text-xl font-semibold text-white mb-2">Business</h3>
@@ -80,7 +80,7 @@ function WhoWeAre() {
 
             {/* Activity Section */}
             <div className="bg-black rounded-lg p-6 border border-gray-700">
-              <h2 className="text-2xl font-bold text-cyan-400 mb-4">Activity</h2>
+              <h2 className="text-2xl font-bold text-white mb-4">Activity</h2>
               <div className="space-y-4">
                 <div>
                   <h3 className="text-xl font-semibold text-white">Development</h3>
@@ -99,7 +99,7 @@ function WhoWeAre() {
 
             {/* Stakeholders & Benefits Section */}
             <div className="bg-black rounded-lg p-6 border border-gray-700">
-              <h2 className="text-2xl font-bold text-cyan-400 mb-4">Stakeholders & Benefits</h2>
+              <h2 className="text-2xl font-bold text-white mb-4">Stakeholders & Benefits</h2>
               <div className="space-y-4">
                 <div>
                   <h3 className="text-xl font-semibold text-white mb-2">Business</h3>

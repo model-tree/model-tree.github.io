@@ -1,16 +1,16 @@
 function WhatWeDo() {
   return (
-    <div className="py-12">
+    <div className="py-12 slide-in-right">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-4xl font-bold text-cyan-400 mb-12 text-center">
+          <h1 className="text-4xl font-bold text-white mb-12 text-center">
             What We Do
           </h1>
           
           <div className="space-y-8">
             {/* Internal Audit Section */}
             <div className="bg-black rounded-lg p-6 border border-gray-700">
-              <h2 className="text-2xl font-bold text-cyan-400 mb-4">Internal Audit</h2>
+              <h2 className="text-2xl font-bold text-white mb-4">Internal Audit</h2>
               <div className="space-y-2 text-gray-300 leading-relaxed">
                 <p className="flex items-start">
                   <span className="mr-2">•</span>
@@ -41,7 +41,7 @@ function WhatWeDo() {
 
             {/* Model governance Section */}
             <div className="bg-black rounded-lg p-6 border border-gray-700">
-              <h2 className="text-2xl font-bold text-cyan-400 mb-4">Model governance</h2>
+              <h2 className="text-2xl font-bold text-white mb-4">Model governance</h2>
               <div className="space-y-2 text-gray-300 leading-relaxed">
                 <p className="flex items-start">
                   <span className="mr-2">•</span>
@@ -56,7 +56,7 @@ function WhatWeDo() {
 
             {/* On-going processes Section */}
             <div className="bg-black rounded-lg p-6 border border-gray-700">
-              <h2 className="text-2xl font-bold text-cyan-400 mb-4">On-going processes</h2>
+              <h2 className="text-2xl font-bold text-white mb-4">On-going processes</h2>
               <div className="space-y-2 text-gray-300 leading-relaxed">
                 <p className="flex items-start">
                   <span className="mr-2">•</span>
@@ -91,7 +91,7 @@ function WhatWeDo() {
 
             {/* Model development Section */}
             <div className="bg-black rounded-lg p-6 border border-gray-700">
-              <h2 className="text-2xl font-bold text-cyan-400 mb-4">Model development</h2>
+              <h2 className="text-2xl font-bold text-white mb-4">Model development</h2>
               <div className="space-y-2 text-gray-300 leading-relaxed">
                 <p className="flex items-start">
                   <span className="mr-2">•</span>
@@ -110,7 +110,7 @@ function WhatWeDo() {
 
             {/* Model validation Section */}
             <div className="bg-black rounded-lg p-6 border border-gray-700">
-              <h2 className="text-2xl font-bold text-cyan-400 mb-4">Model validation</h2>
+              <h2 className="text-2xl font-bold text-white mb-4">Model validation</h2>
               <div className="space-y-2 text-gray-300 leading-relaxed">
                 <p className="flex items-start">
                   <span className="mr-2">•</span>

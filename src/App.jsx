@@ -3,7 +3,6 @@ import Banner from './components/Banner'
 import Home from './pages/Home'
 import WhoWeAre from './pages/WhoWeAre'
 import WhatWeDo from './pages/WhatWeDo'
-import Contact from './pages/Contact'
 
 function App() {
   return (
@@ -13,7 +12,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/who-we-are" element={<WhoWeAre />} />
         <Route path="/what-we-do" element={<WhatWeDo />} />
-        <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>
   )

@@ -1,6 +1,6 @@
 function TeamMember({ image, name, phone, email, linkedin, background, skills, experience }) {
   return (
-    <div className="mb-16">
+    <div className="mb-16 slide-in-right">
       {/* Header with image and contact info */}
       <div className="flex flex-col md:flex-row items-start gap-8 mb-12">
         <div className="flex-shrink-0 w-full md:w-1/4">
@@ -45,7 +45,7 @@ function TeamMember({ image, name, phone, email, linkedin, background, skills, e
 
       {/* Background Section */}
       <div className="mb-8">
-        <h3 className="text-2xl font-bold text-cyan-400 mb-4">Background</h3>
+        <h3 className="text-2xl font-bold text-white mb-4">Background</h3>
         <div className="space-y-3 text-gray-300 leading-relaxed">
           {background.map((item, index) => (
             <p key={index} className="flex items-start">
@@ -58,7 +58,7 @@ function TeamMember({ image, name, phone, email, linkedin, background, skills, e
 
       {/* Skills Section */}
       <div className="mb-8">
-        <h3 className="text-2xl font-bold text-cyan-400 mb-4">Skills</h3>
+        <h3 className="text-2xl font-bold text-white mb-4">Skills</h3>
         <div className="space-y-2 text-gray-300 leading-relaxed">
           {skills.map((skill, index) => (
             <p key={index} className="flex items-start">
@@ -71,7 +71,7 @@ function TeamMember({ image, name, phone, email, linkedin, background, skills, e
 
       {/* Professional Experience Section */}
       <div>
-        <h3 className="text-2xl font-bold text-cyan-400 mb-4">Professional Experience</h3>
+        <h3 className="text-2xl font-bold text-white mb-4">Professional Experience</h3>
         <div className="space-y-3 text-gray-300 leading-relaxed">
           {experience.map((item, index) => (
             <p key={index} className="flex items-start">

@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 @layer utilities {
   .pattern-background {
     background-color: #000000;
@@ -16,5 +27,9 @@
       radial-gradient(circle at 70% 90%, rgba(60, 60, 60, 0.25) 0%, transparent 50%);
     background-size: 100% 100%;
     background-position: 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0;
+  }
+
+  .slide-in-right {
+    animation: slideInFromRight 0.6s ease-out forwards;
   }
 }
