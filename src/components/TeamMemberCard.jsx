@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 
 function TeamMemberCard({
   image,
@@ -13,6 +13,14 @@ function TeamMemberCard({
   experience,
 }) {
   const [expanded, setExpanded] = useState(false)
+  const contentRef = useRef(null)
+  const [contentHeight, setContentHeight] = useState(0)
+
+  useEffect(() => {
+    if (contentRef.current) {
+      setContentHeight(contentRef.current.scrollHeight)
+    }
+  }, [expanded, background, skills, experience])
 
   return (
     <div className="bg-black/80 rounded-xl border border-gray-700/80 overflow-hidden backdrop-blur-sm w-full">
@@ -69,8 +77,8 @@ function TeamMemberCard({
                   <svg className="w-4 h-4 flex-shrink-0 text-blue-400" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                   </svg>
-                  <a href={linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
-                    LinkedIn
+                  <a href={linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-white transition break-all leading-snug">
+                    {linkedin.split('://')[1]}
                   </a>
                 </li>
               )}
@@ -82,11 +90,11 @@ function TeamMemberCard({
         <div className="mt-8 flex justify-center">
           <button
             onClick={() => setExpanded(!expanded)}
-            className="group flex items-center gap-2 px-6 py-2 bg-gray-800/50 hover:bg-gray-700/50 rounded-full transition-all duration-300 text-sm font-medium text-white border border-gray-700 hover:border-gray-600"
+            className="group flex items-center gap-2 px-6 py-2 bg-gray-800/50 hover:bg-gray-700/50 rounded-full transition-all duration-300 text-sm font-medium text-white border border-gray-700 hover:border-gray-600 cursor-pointer"
           >
             {expanded ? 'Show Less' : 'View Full Profile'}
             <svg
-              className={`w-4 h-4 transition-transform duration-300 ${expanded ? 'rotate-180' : ''}`}
+              className={`w-4 h-4 transition-transform duration-500 ease-in-out ${expanded ? 'rotate-180' : ''}`}
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -96,13 +104,21 @@ function TeamMemberCard({
           </button>
         </div>
 
-        {/* Hidden Section (Expanded) */}
-        {expanded && (
-          <div className="mt-8 pt-8 border-t border-gray-700/80 animate-fadeIn">
+        {/* Hidden Section (Expanded) - animated with max-height */}
+        <div
+          style={{
+            maxHeight: expanded ? `${contentHeight}px` : '0px',
+          }}
+          className="overflow-hidden transition-[max-height] duration-500 ease-in-out"
+        >
+          <div
+            ref={contentRef}
+            className={`pt-8 border-t border-gray-700/80 mt-8 transition-opacity duration-500 ease-in-out ${expanded ? 'opacity-100' : 'opacity-0'}`}
+          >
             <div className="grid grid-cols-1 gap-8">
               {/* Background */}
               {background && background.length > 0 && (
-                <div>
+                <div className={`transition-all duration-500 ease-out ${expanded ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`} style={{ transitionDelay: '100ms' }}>
                   <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-3">
                     <span className="w-1 h-6 bg-blue-500 rounded-full"></span>
                     Background
@@ -110,7 +126,7 @@ function TeamMemberCard({
                   <div className="space-y-3 pl-4">
                     {background.map((item, index) => (
                       <p key={index} className="text-gray-300 leading-relaxed text-sm md:text-base flex items-start gap-3">
-                        <span className="text-blue-500 mt-1.5">•</span>
+                        <span className="text-blue-500 mt-1.5">&bull;</span>
                         <span>{item}</span>
                       </p>
                     ))}
@@ -120,7 +136,7 @@ function TeamMemberCard({
 
               {/* Skills */}
               {skills && skills.length > 0 && (
-                <div>
+                <div className={`transition-all duration-500 ease-out ${expanded ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`} style={{ transitionDelay: '200ms' }}>
                   <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-3">
                     <span className="w-1 h-6 bg-blue-500 rounded-full"></span>
                     Skills
@@ -128,7 +144,7 @@ function TeamMemberCard({
                   <div className="space-y-2 pl-4">
                     {skills.map((skill, index) => (
                       <p key={index} className="text-gray-300 leading-relaxed text-sm md:text-base flex items-start gap-3">
-                        <span className="text-blue-500 mt-1.5">•</span>
+                        <span className="text-blue-500 mt-1.5">&bull;</span>
                         <span>{skill}</span>
                       </p>
                     ))}
@@ -138,7 +154,7 @@ function TeamMemberCard({
 
               {/* Professional Experience */}
               {experience && experience.length > 0 && (
-                <div>
+                <div className={`transition-all duration-500 ease-out ${expanded ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`} style={{ transitionDelay: '300ms' }}>
                   <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-3">
                     <span className="w-1 h-6 bg-blue-500 rounded-full"></span>
                     Professional Experience
@@ -146,7 +162,7 @@ function TeamMemberCard({
                   <div className="space-y-3 pl-4">
                     {experience.map((item, index) => (
                       <p key={index} className="text-gray-300 leading-relaxed text-sm md:text-base flex items-start gap-3">
-                        <span className="text-blue-500 mt-1.5">•</span>
+                        <span className="text-blue-500 mt-1.5">&bull;</span>
                         <span>{item}</span>
                       </p>
                     ))}
@@ -155,7 +171,7 @@ function TeamMemberCard({
               )}
             </div>
           </div>
-        )}
+        </div>
       </div>
     </div>
   )

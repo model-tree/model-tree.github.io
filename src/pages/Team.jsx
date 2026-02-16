@@ -6,7 +6,7 @@ function Team() {
       image: '/team_radu.webp',
       name: 'Radu Popescu',
       role: 'Founder',
-      shortDescription: 'PhD in Mathematics (Univ. Lyon, France). Former director at UBS in London. Brings experience and technical talent to deliver modelling and model risk management solutions for clients.',
+      shortDescription: 'Former director at UBS in London and certified Financial Risk Manager (FRM). PhD in Mathematics (Univ. Lyon, France). PhD in Mathematics (Univ. Lyon, France). Brings experience and technical talent to deliver modelling and model risk management solutions for clients.',
       phone: '+40 738 846 868',
       email: 'radu.popescu@model-tree.net',
       linkedin: 'https://www.linkedin.com/in/raduvpopescu/',

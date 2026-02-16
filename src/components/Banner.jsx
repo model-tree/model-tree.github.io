@@ -49,6 +49,16 @@ function Banner() {
               Who we are
             </Link>
             <Link 
+              to="/team" 
+              className={`text-lg transition-colors ${
+                isActive('/team') 
+                  ? 'font-bold text-white' 
+                  : 'text-gray-400 hover:text-white'
+              }`}
+            >
+              Team
+            </Link>
+            <Link 
               to="/what-we-do" 
               className={`text-lg transition-colors ${
                 isActive('/what-we-do') 
@@ -67,16 +77,6 @@ function Banner() {
               }`}
             >
               Portfolio
-            </Link>
-            <Link 
-              to="/team" 
-              className={`text-lg transition-colors ${
-                isActive('/team') 
-                  ? 'font-bold text-white' 
-                  : 'text-gray-400 hover:text-white'
-              }`}
-            >
-              Team
             </Link>
           </nav>
 
@@ -125,6 +125,17 @@ function Banner() {
                 Who we are
               </Link>
               <Link 
+                to="/team" 
+                onClick={closeMenu}
+                className={`text-lg transition-colors ${
+                  isActive('/team') 
+                    ? 'font-bold text-white' 
+                    : 'text-gray-400 hover:text-white'
+                }`}
+              >
+                Team
+              </Link>
+              <Link 
                 to="/what-we-do" 
                 onClick={closeMenu}
                 className={`text-lg transition-colors ${
@@ -145,17 +156,6 @@ function Banner() {
                 }`}
               >
                 Portfolio
-              </Link>
-              <Link 
-                to="/team" 
-                onClick={closeMenu}
-                className={`text-lg transition-colors ${
-                  isActive('/team') 
-                    ? 'font-bold text-white' 
-                    : 'text-gray-400 hover:text-white'
-                }`}
-              >
-                Team
               </Link>
             </div>
           </nav>
