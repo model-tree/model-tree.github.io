@@ -68,6 +68,16 @@ function Banner() {
             >
               Portfolio
             </Link>
+            <Link 
+              to="/team" 
+              className={`text-lg transition-colors ${
+                isActive('/team') 
+                  ? 'font-bold text-white' 
+                  : 'text-gray-400 hover:text-white'
+              }`}
+            >
+              Team
+            </Link>
           </nav>
 
           {/* Mobile Hamburger Button - Right side */}
@@ -135,6 +145,17 @@ function Banner() {
                 }`}
               >
                 Portfolio
+              </Link>
+              <Link 
+                to="/team" 
+                onClick={closeMenu}
+                className={`text-lg transition-colors ${
+                  isActive('/team') 
+                    ? 'font-bold text-white' 
+                    : 'text-gray-400 hover:text-white'
+                }`}
+              >
+                Team
               </Link>
             </div>
           </nav>
