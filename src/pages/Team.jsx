@@ -6,7 +6,8 @@ function Team() {
       image: '/team_radu.webp',
       name: 'Radu Popescu',
       role: 'Founder',
-      shortDescription: 'Former director at UBS in London and certified Financial Risk Manager (FRM). PhD in Mathematics (Univ. Lyon, France). PhD in Mathematics (Univ. Lyon, France). Brings experience and technical talent to deliver modelling and model risk management solutions for clients.',
+      shortDescription: 'PhD in Maths (Lyon), former Director at Big Four and top-tier banks. Founded Model Tree and pursues pure maths research.',
+      location: 'Bucharest',
       phone: '+40 738 846 868',
       email: 'radu.popescu@model-tree.net',
       linkedin: 'https://www.linkedin.com/in/raduvpopescu/',
@@ -35,6 +36,66 @@ function Team() {
         'Stress testing: reviewed stress testing framework and stress testing models(e.g. CCAR submission).',
       ],
     },
+    {
+      image: '/team_placeholder.svg',
+      name: 'Jonathan Davidson',
+      role: 'Consultant',
+      shortDescription: 'PhD in Applied Maths (Cambridge). A discreet, safe pair of hands trusted by senior management. Keen on Number Theory, AI, and running.',
+      location: 'London',
+      email: '',
+      linkedin: '',
+      background: [],
+      skills: [],
+      experience: [],
+    },
+    {
+      image: '/team_placeholder.svg',
+      name: 'Vlad Barnaure',
+      role: 'Consultant',
+      shortDescription: 'PhD in Economics (Glasgow). Specialises in macroeconomic, time series and ML modelling at top-tier banks. Chess International Master.',
+      location: 'London',
+      email: '',
+      linkedin: '',
+      background: [],
+      skills: [],
+      experience: [],
+    },
+    {
+      image: '/team_placeholder.svg',
+      name: 'Rares Stan',
+      role: 'Consultant',
+      shortDescription: 'PhD in Maths (Bucharest). Specialises in statistical, ML and AI modelling with a background in IT and banking consultancy.',
+      location: 'Bucharest',
+      email: '',
+      linkedin: '',
+      background: [],
+      skills: [],
+      experience: [],
+    },
+    {
+      image: '/team_placeholder.svg',
+      name: 'Daniel Suciu',
+      role: 'Consultant',
+      shortDescription: 'Banking and insurance consultant with an actuarial background, experienced at top-tier international financial institutions.',
+      location: 'Bucharest',
+      email: '',
+      linkedin: '',
+      background: [],
+      skills: [],
+      experience: [],
+    },
+    {
+      image: '/team_placeholder.svg',
+      name: 'Maria Mihailescu',
+      role: 'Consultant',
+      shortDescription: 'Banking and insurance consultant with actuarial studies in the UK. Entrepreneur in bio agriculture in Romania.',
+      location: 'Bucharest',
+      email: '',
+      linkedin: '',
+      background: [],
+      skills: [],
+      experience: [],
+    },
   ]
 
   return (
@@ -44,7 +105,7 @@ function Team() {
           <h1 className="text-4xl font-bold text-white mb-12 text-center">
             Team
           </h1>
-          <div className="space-y-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {teamMembers.map((member) => (
               <TeamMemberCard
                 key={member.name}
@@ -52,6 +113,7 @@ function Team() {
                 name={member.name}
                 role={member.role}
                 shortDescription={member.shortDescription}
+                location={member.location}
                 phone={member.phone}
                 email={member.email}
                 linkedin={member.linkedin}
