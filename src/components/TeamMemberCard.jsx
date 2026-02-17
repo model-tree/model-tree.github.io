@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { createPortal } from 'react-dom'
 
 function TeamMemberCard({
   image,
@@ -72,22 +73,20 @@ function TeamMemberCard({
         </div>
       </div>
 
-      {/* Modal Popup */}
-      {modalOpen && (
-        <div
-          className="fixed inset-0 z-50 overflow-y-auto"
-          onClick={() => setModalOpen(false)}
-        >
+      {/* Modal Popup - rendered via portal to body for correct viewport positioning */}
+      {modalOpen && createPortal(
+        <>
           {/* Backdrop */}
-          <div className="fixed inset-0 bg-black/70 backdrop-blur-sm animate-fadeIn" />
+          <div
+            className="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm animate-fadeIn"
+            onClick={() => setModalOpen(false)}
+          />
 
-          {/* Centering wrapper */}
-          <div className="fixed inset-0 flex items-center justify-center px-12 py-10">
-            {/* Modal Content */}
-            <div
-              className="relative bg-gray-950 border border-gray-700/80 rounded-2xl w-full max-w-5xl max-h-[calc(100vh-5rem)] overflow-y-auto shadow-2xl animate-modalIn"
-              onClick={(e) => e.stopPropagation()}
-            >
+          {/* Modal - fixed size rectangle, centred with margins from screen edges */}
+          <div
+            className="fixed z-50 top-10 bottom-10 left-0 right-0 mx-auto w-[calc(100%-6rem)] max-w-5xl bg-gray-950 border border-gray-700/80 rounded-2xl shadow-2xl animate-modalIn flex flex-col"
+            onClick={(e) => e.stopPropagation()}
+          >
             {/* Close button */}
             <button
               onClick={() => setModalOpen(false)}
@@ -98,7 +97,8 @@ function TeamMemberCard({
               </svg>
             </button>
 
-            <div className="p-6 md:p-8">
+            {/* Scrollable content */}
+            <div className="overflow-y-auto flex-1 p-6 md:p-8">
               {/* Header: Photo + Info + Contact */}
               <div className="flex flex-col md:flex-row gap-6 md:gap-8">
                 {/* Photo */}
@@ -164,14 +164,14 @@ function TeamMemberCard({
                         <span className="w-1 h-6 bg-blue-500 rounded-full"></span>
                         Background
                       </h3>
-                      <div className="space-y-3 pl-4">
+                      <ul className="space-y-3 pl-4 list-none">
                         {background.map((item, index) => (
-                          <p key={index} className="text-gray-300 leading-relaxed text-sm md:text-base flex items-start gap-3">
-                            <span className="text-blue-500 mt-1.5">&bull;</span>
+                          <li key={index} className="text-gray-300 leading-relaxed text-sm md:text-base flex items-start gap-3">
+                            <span className="w-1.5 h-1.5 mt-[0.55em] rounded-full bg-blue-500 flex-shrink-0"></span>
                             <span>{item}</span>
-                          </p>
+                          </li>
                         ))}
-                      </div>
+                      </ul>
                     </div>
                   )}
 
@@ -181,14 +181,14 @@ function TeamMemberCard({
                         <span className="w-1 h-6 bg-blue-500 rounded-full"></span>
                         Skills
                       </h3>
-                      <div className="space-y-2 pl-4">
+                      <ul className="space-y-2 pl-4 list-none">
                         {skills.map((skill, index) => (
-                          <p key={index} className="text-gray-300 leading-relaxed text-sm md:text-base flex items-start gap-3">
-                            <span className="text-blue-500 mt-1.5">&bull;</span>
+                          <li key={index} className="text-gray-300 leading-relaxed text-sm md:text-base flex items-start gap-3">
+                            <span className="w-1.5 h-1.5 mt-[0.55em] rounded-full bg-blue-500 flex-shrink-0"></span>
                             <span>{skill}</span>
-                          </p>
+                          </li>
                         ))}
-                      </div>
+                      </ul>
                     </div>
                   )}
 
@@ -198,22 +198,22 @@ function TeamMemberCard({
                         <span className="w-1 h-6 bg-blue-500 rounded-full"></span>
                         Professional Experience
                       </h3>
-                      <div className="space-y-3 pl-4">
+                      <ul className="space-y-3 pl-4 list-none">
                         {experience.map((item, index) => (
-                          <p key={index} className="text-gray-300 leading-relaxed text-sm md:text-base flex items-start gap-3">
-                            <span className="text-blue-500 mt-1.5">&bull;</span>
+                          <li key={index} className="text-gray-300 leading-relaxed text-sm md:text-base flex items-start gap-3">
+                            <span className="w-1.5 h-1.5 mt-[0.55em] rounded-full bg-blue-500 flex-shrink-0"></span>
                             <span>{item}</span>
-                          </p>
+                          </li>
                         ))}
-                      </div>
+                      </ul>
                     </div>
                   )}
                 </div>
               )}
             </div>
           </div>
-          </div>
-        </div>
+        </>,
+        document.body
       )}
     </>
   )
