@@ -39,7 +39,7 @@ function Team() {
     {
       image: '/team_jonathan_2.JPG',
       name: 'Jonathan Davidson',
-      role: 'Consultant',
+      role: 'Senior Consultant',
       shortDescription: 'PhD in Applied Maths (Cambridge). A discreet, safe pair of hands trusted by senior management. Keen on Number Theory, AI, and running.',
       location: 'London',
       phone: '+44 7980 860 367',
@@ -70,7 +70,7 @@ function Team() {
     {
       image: '/team_vlad.jpg',
       name: 'Vlad Barnaure',
-      role: 'Consultant',
+      role: 'Senior Consultant',
       shortDescription: 'PhD in Economics (Glasgow). Specialises in macroeconomic, time series and ML modelling at top-tier banks. Chess International Master.',
       location: 'London',
       phone: '+44 7775 963 377',
@@ -196,7 +196,7 @@ function Team() {
     {
       image: '/team_placeholder.svg',
       name: 'Aurel Totolici',
-      role: 'Consultant',
+      role: 'Senior Consultant',
       shortDescription: 'PhD in Economics with extensive audit and risk management experience at financial institutions in London and Madrid. Certified Information Systems Auditor and Project Administrator.',
       location: 'Bucharest',
       phone: '+40 759 674 094',
@@ -214,7 +214,7 @@ function Team() {
     {
       image: '/team_placeholder.svg',
       name: 'Alexandra Vultureanu-Albisi',
-      role: 'Teaching Assistant & Researcher',
+      role: 'Consultant',
       shortDescription: 'PhD in Computer Science (Craiova), specialising in Machine Learning, AI, and Recommender Systems. Teaching assistant with research in knowledge graphs and reinforcement learning.',
       location: 'Craiova, Romania',
       phone: '+40 766 648 123',
@@ -247,7 +247,7 @@ function Team() {
     {
       image: '/team_placeholder.svg',
       name: 'Petre-Claudiu Mindrila',
-      role: 'Researcher',
+      role: 'Consultant',
       shortDescription: 'PhD in Mathematics (Charles University, Prague). Postdoctoral researcher at BCAM Bilbao, specialising in PDEs and fluid dynamics. Gold medallist at SEEMOUS and National Mathematical Olympiad.',
       location: 'Bilbao, Spain',
       email: 'cmindrila@bcamath.org',
