@@ -37,7 +37,7 @@ function Team() {
       ],
     },
     {
-      image: '/team_jonathan_2.JPG',
+      image: '/team_jonathan_3.JPG',
       name: 'Jonathan Davidson',
       role: 'Senior Consultant',
       shortDescription: 'PhD in Applied Maths (Cambridge). A discreet, safe pair of hands trusted by senior management. Keen on Number Theory, AI, and running.',
@@ -68,7 +68,7 @@ function Team() {
       ],
     },
     {
-      image: '/team_vlad.jpg',
+      image: '/team_vlad_2.JPG',
       name: 'Vlad Barnaure',
       role: 'Senior Consultant',
       shortDescription: 'PhD in Economics (Glasgow). Specialises in macroeconomic, time series and ML modelling at top-tier banks. Chess International Master.',
@@ -78,7 +78,7 @@ function Team() {
       linkedin: 'https://www.linkedin.com/in/barnaure/',
       background: [
         'Vlad specializes in macro-financial modelling for stress testing and policy analysis, risk management and predictive analytics. He holds a Ph.D. in Economics from the University of Glasgow and is a CFA Level III candidate.',
-        'Vlad began his career at the International Monetary Fund, where he advised on banking supervision, financial stability and monetary policy during the country\'s 2013-2015 Stand-By Arrangement. He subsequently served in quant roles at UBS and Barclays in London, progressing to Vice President.',
+        'Vlad began his career at the International Monetary Fund, where he advised on banking supervision, financial stability and monetary policy during Romania\'s 2013-2015 Stand-By Arrangement. He subsequently served in quant roles at UBS and Barclays in London, progressing to Vice President.',
         'Vlad\'s lifelong passion for chess, which culminated in winning the Romanian National Championship in 2014, has shaped his analytical rigor, strategic thinking and attention to detail.',
       ],
       skills: [
