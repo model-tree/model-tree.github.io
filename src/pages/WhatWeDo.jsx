@@ -45,7 +45,7 @@ function WhatWeDo() {
     <div className="py-12 slide-in-right">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-4xl font-bold text-white mb-12 text-center">
+          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-12 text-center">
             What We Do
           </h1>
 
@@ -53,12 +53,12 @@ function WhatWeDo() {
             {cards.map((card) => (
               <div
                 key={card.title}
-                className="bg-black rounded-lg p-6 border border-gray-700"
+                className="bg-white dark:bg-black rounded-lg p-6 border border-gray-200 dark:border-gray-700"
               >
-                <h2 className="text-2xl font-bold text-white mb-4">
+                <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
                   {card.title}
                 </h2>
-                <div className="space-y-2 text-gray-300 leading-relaxed">
+                <div className="space-y-2 text-gray-600 dark:text-gray-300 leading-relaxed">
                   {card.items.map((item, i) => (
                     <p key={i} className="flex items-start">
                       <span className="mr-2">•</span>

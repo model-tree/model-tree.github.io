@@ -9,7 +9,7 @@ import Team from './pages/Team'
 
 function App() {
   return (
-    <div className="min-h-screen bg-black pattern-background flex flex-col">
+    <div className="min-h-screen pattern-background flex flex-col">
       <Banner />
       <div className="flex-1">
         <Routes>
