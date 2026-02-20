@@ -216,7 +216,7 @@ function Team() {
       name: 'Alexandra Vultureanu',
       role: 'Consultant',
       shortDescription: 'PhD in Computer Science (Craiova), specialising in Machine Learning, AI, and Recommender Systems. Teaching assistant with research in knowledge graphs and reinforcement learning.',
-      location: 'Craiova, Romania',
+      location: 'Bucharest',
       phone: '+40 766 648 123',
       email: 'alexandra.vultureanu@edu.ucv.ro',
       linkedin: 'https://www.linkedin.com/in/alexandra-vultureanu-albisi',
@@ -249,7 +249,7 @@ function Team() {
       name: 'Claudiu Mindrila',
       role: 'Consultant',
       shortDescription: 'PhD in Mathematics (Charles University, Prague). Postdoctoral researcher at BCAM Bilbao, specialising in PDEs and fluid dynamics. Gold medallist at SEEMOUS and National Mathematical Olympiad.',
-      location: 'Bilbao, Spain',
+      location: 'Bucharest',
       email: 'cmindrila@bcamath.org',
       linkedin: '',
       background: [
