@@ -24,9 +24,9 @@ function Banner() {
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center" onClick={closeMenu}>
             <img 
-              src="/model_tree_03_transparent_background.png" 
+              src={dark ? '/model_tree_dark_right.png' : '/model_tree_light_right.png'}
               alt="Model Tree" 
-              className="h-16 w-auto bg-gray-500 dark:bg-transparent rounded-lg p-2"
+              className="h-16 w-auto"
             />
           </Link>
 

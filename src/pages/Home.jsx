@@ -1,4 +1,8 @@
+import { useTheme } from '../ThemeContext'
+
 function Home() {
+  const { dark } = useTheme()
+
   return (
     <div className="min-h-[calc(100vh-200px)] flex flex-col py-20 slide-in-right">
       <div className="container mx-auto px-4 flex-1 flex flex-col">
@@ -77,9 +81,9 @@ function Home() {
                 </div>
                 <div className="flex items-center justify-center">
                   <img 
-                    src="/model_tree_03_transparent_background.png" 
+                    src={dark ? '/model_tree_dark_down.png' : '/model_tree_light_down.png'}
                     alt="Model Tree Logo" 
-                    className="h-48 w-auto opacity-90 bg-gray-500 dark:bg-transparent rounded-lg p-3"
+                    className="h-48 w-auto opacity-90"
                   />
                 </div>
               </div>
