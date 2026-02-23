@@ -73,7 +73,7 @@ function Home() {
                     </svg>
                     <div>
                       <p className="font-semibold text-gray-900 dark:text-white">LinkedIn</p>
-                      <a href="https://www.linkedin.com/company/modeltree/" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition">
+                      <a href="https://www.linkedin.com/company/modeltree/" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition break-all">
                         https://www.linkedin.com/company/modeltree/
                       </a>
                     </div>
