@@ -41,7 +41,7 @@ function Home() {
                     </svg>
                     <div>
                       <p className="font-semibold text-gray-900 dark:text-white">Address</p>
-                      <p className="text-gray-600 dark:text-gray-300">6 Ing. Giulini Str.</p>
+                      <p className="text-gray-600 dark:text-gray-300">7 Ing. Giulini Str.</p>
                       <p className="text-gray-600 dark:text-gray-300">Bucharest, Romania</p>
                     </div>
                   </div>
