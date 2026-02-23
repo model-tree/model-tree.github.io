@@ -53,6 +53,7 @@ function Banner() {
               <Link to="/team" className={linkClass('/team')}>Team</Link>
               <Link to="/what-we-do" className={linkClass('/what-we-do')}>What we do</Link>
               <Link to="/portfolio" className={linkClass('/portfolio')}>Portfolio</Link>
+              <Link to="/papers" className={linkClass('/papers')}>Papers</Link>
             </nav>
 
             <button
@@ -81,6 +82,7 @@ function Banner() {
               <Link to="/team" onClick={closeMenu} className={linkClass('/team')}>Team</Link>
               <Link to="/what-we-do" onClick={closeMenu} className={linkClass('/what-we-do')}>What we do</Link>
               <Link to="/portfolio" onClick={closeMenu} className={linkClass('/portfolio')}>Portfolio</Link>
+              <Link to="/papers" onClick={closeMenu} className={linkClass('/papers')}>Papers</Link>
             </div>
           </nav>
         )}

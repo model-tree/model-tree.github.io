@@ -19,10 +19,10 @@ function Home() {
               We are a one stop shop for modelling and model risk management, bringing together experience and technical talent to develop solutions for current problems.
             </p>
             <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
-              Our delivery ranges from small pieces of code to fit client's needs to complex model risk management framework design, including model development, validation, models' audit and compliance assessments, alongside with regulatory training for the board.
+              Our delivery ranges from small pieces of code to fit clients' needs to complex model risk management framework design, including model development, validation, models' audit and compliance assessments, alongside with regulatory training for the board.
             </p>
             <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-              We use classical and Machine Learning methods with implementations meeting client's need (e.g. Excel, R, SAS, Python), and we also advise clients on financial and non-financial reporting, and general risk frameworks (Op. Risk, ICT, Sustainability) stemming from compliance or internal governance development needs.
+              We use classical and Machine Learning methods with implementations meeting clients' needs (e.g. Excel, R, SAS, Python), and we also advise clients on financial and non-financial reporting, and general risk frameworks (Op. Risk, ICT, Sustainability) stemming from compliance or internal governance development needs.
             </p>
           </div>
         </div>

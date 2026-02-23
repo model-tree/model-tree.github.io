@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import WhoWeAre from './pages/WhoWeAre'
 import WhatWeDo from './pages/WhatWeDo'
 import Portfolio from './pages/Portfolio'
+import Papers from './pages/Papers'
 import Team from './pages/Team'
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/who-we-are" element={<WhoWeAre />} />
           <Route path="/what-we-do" element={<WhatWeDo />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/papers" element={<Papers />} />
           <Route path="/team" element={<Team />} />
         </Routes>
       </div>

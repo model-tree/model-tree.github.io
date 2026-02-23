@@ -34,7 +34,7 @@ function WhoWeAre() {
             </div>
             <div className="w-full md:w-4/5">
               <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                Our delivery ranges from small pieces of code to fit client's needs to complex model risk management framework design, including model development, validation, models' audit and compliance assessments, alongside with regulatory training for the board. We use classical and Machine Learning methods with implementations meeting client's need (e.g. Excel, R, SAS, Python).
+                Our delivery ranges from small pieces of code to fit clients' needs to complex model risk management framework design, including model development, validation, models' audit and compliance assessments, alongside with regulatory training for the board. We use classical and Machine Learning methods with implementations meeting clients' needs (e.g. Excel, R, SAS, Python).
               </p>
             </div>
           </div>
