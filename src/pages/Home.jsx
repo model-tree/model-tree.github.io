@@ -16,13 +16,13 @@ function Home() {
         <div className="max-w-4xl mx-auto mb-16">
           <div className="bg-white dark:bg-black rounded-lg p-8 border border-gray-200 dark:border-gray-700">
             <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
-              We are a one stop shop for modelling and model risk management, bringing together experience and technical talent to develop solutions for current problems.
+              With an established presence in both London and Bucharest, we are a specialist consulting firm dedicated to modelling and model risk management in regulated banking and insurance environments. We combine deep industry expertise with exceptional quantitative strength to deliver robust, regulator-ready solutions to complex risk challenges.
             </p>
             <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
-              Our delivery ranges from small pieces of code to fit clients' needs to complex model risk management framework design, including model development, validation, models' audit and compliance assessments, alongside with regulatory training for the board.
+              Our team of nine includes seven PhDs in quantitative and AI-related disciplines and two actuaries, giving us a level of technical depth rarely found in firms of our size. We are a hands-on boutique: clients work directly with highly experienced specialists who combine academic rigour with practical delivery. Our expertise spans classical statistical methodologies as well as modern AI and machine learning approaches.
             </p>
             <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-              We use classical and Machine Learning methods with implementations meeting clients' needs (e.g. Excel, R, SAS, Python), and we also advise clients on financial and non-financial reporting, and general risk frameworks (Op. Risk, ICT, Sustainability) stemming from compliance or internal governance development needs.
+              For larger engagements, we collaborate with selected consulting partners to complement our expertise and provide additional capacity, while preserving the senior attention and technical excellence that define our work.
             </p>
           </div>
         </div>
