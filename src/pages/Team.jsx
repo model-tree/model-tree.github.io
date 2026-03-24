@@ -5,7 +5,7 @@ function Team() {
     {
       image: '/team_radu_169.webp',
       name: 'Radu Popescu',
-      role: 'Director & Owner',
+      role: 'Director',
       shortDescription: 'PhD in Maths (Lyon), former Director at Big Four and top-tier banks. Founded Model Tree and pursues pure maths research.',
       location: 'Bucharest',
       phone: '+40 738 846 868',
