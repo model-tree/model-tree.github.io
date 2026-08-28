@@ -218,7 +218,7 @@ function Team() {
       shortDescription: 'PhD in Computer Science (Craiova), specialising in Machine Learning, AI, and Recommender Systems. Teaching assistant with research in knowledge graphs and reinforcement learning.',
       location: 'Bucharest',
       phone: '+40 766 648 123',
-      email: 'alexandra.vultureanu@edu.ucv.ro',
+      email: 'alexandra.vultureanu@model-tree.net',
       linkedin: 'https://www.linkedin.com/in/alexandra-vultureanu-albisi',
       background: [
         'PhD in Computer Science from the Doctoral School Constantin Belea, Faculty of Automation, Computers and Electronics, University of Craiova. Thesis on Explainable Context-Aware Recommender Systems using Knowledge Graphs and Reinforcement Learning, graduated summa cum laude.',
@@ -250,7 +250,7 @@ function Team() {
       role: 'Consultant',
       shortDescription: 'PhD in Mathematics (Charles University, Prague). Postdoctoral researcher at BCAM Bilbao, specialising in PDEs and fluid dynamics. Gold medallist at SEEMOUS and National Mathematical Olympiad.',
       location: 'Bucharest',
-      email: 'cmindrila@bcamath.org',
+      email: 'claudiu.mindrila@model-tree.net',
       linkedin: '',
       background: [
         'Postdoctoral researcher at the Basque Center for Applied Mathematics (BCAM) in Bilbao, with previous research positions at ISMMA Bucharest and Charles University Prague.',
