@@ -4,6 +4,7 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import WhoWeAre from './pages/WhoWeAre'
 import WhatWeDo from './pages/WhatWeDo'
+import AIValidation from './pages/AIValidation'
 import Portfolio from './pages/Portfolio'
 import Papers from './pages/Papers'
 import Team from './pages/Team'
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/who-we-are" element={<WhoWeAre />} />
           <Route path="/what-we-do" element={<WhatWeDo />} />
+          <Route path="/ai-validation" element={<AIValidation />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/papers" element={<Papers />} />
           <Route path="/team" element={<Team />} />

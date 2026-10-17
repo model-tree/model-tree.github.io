@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function WhatWeDo() {
   const cards = [
     {
@@ -6,7 +8,7 @@ function WhatWeDo() {
         "We perform validation in line with clients' internal governance of models and the riskiness of the models validated.",
         "We document using either our own documentation or using clients' templates.",
         "We reimplement/benchmark models.",
-        "We test for compliance with regulations (e.g., IFRS 9, EBA, ECB, BCBS, SS 3/18, SR 11-7).",
+        "We test for compliance with regulations (e.g., IFRS 9, EBA, ECB, BCBS, SS 3/18, SS 1/23, SR 11-7).",
       ],
     },
     {
@@ -31,6 +33,16 @@ function WhatWeDo() {
         "We review model documentation, provide templates, and review control process.",
         "We review or help our clients formulate internal policies for Model Risk Management.",
       ],
+    },
+    {
+      title: "AI and Machine Learning model validation",
+      items: [
+        "We independently validate AI, machine learning and GenAI models with the same rigour applied to traditional risk models.",
+        "We assess data, performance, robustness, explainability, fairness, security and human oversight, not only the algorithm.",
+        "We help clients extend their model risk management framework to AI: inventory, risk tiering, policies and monitoring.",
+        "We align our work with SS 1/23, SR 11-7, the EU AI Act, ISO/IEC 42001 and the NIST AI Risk Management Framework.",
+      ],
+      link: { to: "/ai-validation", label: "More about AI model validation" },
     },
     {
       title: "Internal Audit",
@@ -66,6 +78,14 @@ function WhatWeDo() {
                     </p>
                   ))}
                 </div>
+                {card.link && (
+                  <Link
+                    to={card.link.to}
+                    className="inline-block mt-4 font-semibold text-gray-900 dark:text-white hover:underline"
+                  >
+                    {card.link.label} →
+                  </Link>
+                )}
               </div>
             ))}
           </div>

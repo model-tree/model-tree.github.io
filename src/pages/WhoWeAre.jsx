@@ -73,6 +73,10 @@ function WhoWeAre() {
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Detection</h3>
                   <p className="text-gray-600 dark:text-gray-300">Data Quality, Fraud</p>
                 </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">AI</h3>
+                  <p className="text-gray-600 dark:text-gray-300">Machine Learning, GenAI</p>
+                </div>
               </div>
             </div>
 
@@ -91,6 +95,9 @@ function WhoWeAre() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Audit</h3>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white">AI Model Validation & Governance</h3>
                 </div>
               </div>
             </div>

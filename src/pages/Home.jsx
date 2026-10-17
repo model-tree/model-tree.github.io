@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { useTheme } from '../ThemeContext'
 
 function Home() {
@@ -10,6 +11,12 @@ function Home() {
           <h1 className="text-5xl font-bold text-gray-900 dark:text-white mb-6">
             Risk Management and Modelling Services
           </h1>
+          <Link
+            to="/ai-validation"
+            className="text-2xl text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
+          >
+            including AI and Machine Learning Model Validation
+          </Link>
         </div>
 
         {/* Presentation Section */}
@@ -19,7 +26,7 @@ function Home() {
               With an established presence in both London and Bucharest, we are a specialist consulting firm dedicated to modelling and model risk management in regulated banking and insurance environments. We combine deep industry expertise with exceptional quantitative strength to deliver robust, regulator-ready solutions to complex risk challenges.
             </p>
             <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
-              Our team of nine includes seven PhDs in quantitative and AI-related disciplines and two actuaries, giving us a level of technical depth rarely found in firms of our size. We are a hands-on boutique: clients work directly with highly experienced specialists who combine academic rigour with practical delivery. Our expertise spans classical statistical methodologies as well as modern AI and machine learning approaches.
+              Our team of nine includes seven PhDs in quantitative and AI-related disciplines and two actuaries, giving us a level of technical depth rarely found in firms of our size. We are a hands-on boutique: clients work directly with highly experienced specialists who combine academic rigour with practical delivery. Our expertise spans classical statistical methodologies as well as modern AI and machine learning approaches, and we apply the same independent validation and governance standards to AI models as to traditional risk models.
             </p>
             <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
               For larger engagements, we collaborate with selected consulting partners to complement our expertise and provide additional capacity, while preserving the senior attention and technical excellence that define our work.

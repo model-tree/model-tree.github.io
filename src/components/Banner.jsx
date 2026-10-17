@@ -47,18 +47,19 @@ function Banner() {
               )}
             </button>
 
-            <nav className="hidden md:flex items-center space-x-8">
+            <nav className="hidden lg:flex items-center space-x-8 whitespace-nowrap">
               <Link to="/" className={linkClass('/')}>Home</Link>
               <Link to="/who-we-are" className={linkClass('/who-we-are')}>Who we are</Link>
               <Link to="/team" className={linkClass('/team')}>Team</Link>
               <Link to="/what-we-do" className={linkClass('/what-we-do')}>What we do</Link>
+              <Link to="/ai-validation" className={linkClass('/ai-validation')}>AI validation</Link>
               <Link to="/portfolio" className={linkClass('/portfolio')}>Portfolio</Link>
               <Link to="/papers" className={linkClass('/papers')}>Papers</Link>
             </nav>
 
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden text-gray-700 dark:text-white focus:outline-none p-2 cursor-pointer"
+              className="lg:hidden text-gray-700 dark:text-white focus:outline-none p-2 cursor-pointer"
               aria-label="Toggle menu"
             >
               {isMenuOpen ? (
@@ -75,12 +76,13 @@ function Banner() {
         </div>
 
         {isMenuOpen && (
-          <nav className="md:hidden mt-4 pb-4 border-t border-gray-200 dark:border-gray-700">
+          <nav className="lg:hidden mt-4 pb-4 border-t border-gray-200 dark:border-gray-700">
             <div className="flex flex-col space-y-4 pt-4">
               <Link to="/" onClick={closeMenu} className={linkClass('/')}>Home</Link>
               <Link to="/who-we-are" onClick={closeMenu} className={linkClass('/who-we-are')}>Who we are</Link>
               <Link to="/team" onClick={closeMenu} className={linkClass('/team')}>Team</Link>
               <Link to="/what-we-do" onClick={closeMenu} className={linkClass('/what-we-do')}>What we do</Link>
+              <Link to="/ai-validation" onClick={closeMenu} className={linkClass('/ai-validation')}>AI validation</Link>
               <Link to="/portfolio" onClick={closeMenu} className={linkClass('/portfolio')}>Portfolio</Link>
               <Link to="/papers" onClick={closeMenu} className={linkClass('/papers')}>Papers</Link>
             </div>
